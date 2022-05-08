@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Trainer</title>
+    <link rel= "stylesheet" href= "style.css">
+</head>
+<body>
+    <h1>Aim Trainer</h1>
+    <h2>Click the start button to begin the Aim Trainer!
+         Click the Target as many times as you can in 30 seconds.
+        Each mis-click will reduce your score.
+    </h2>
+    <h2 id="timer">30</h2>
+    <button onclick="startGame()">Click to Start</button>
+
+    <div class="game">
+        <div id="target" onmousedown="targetClick()"></div>
+        <div id="background" onmousedown="fail()"></div>
+        <div id="score">0</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
